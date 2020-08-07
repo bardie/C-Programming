@@ -1,6 +1,8 @@
-# Beginners
+# C Programming
 
-## Command Line
+## stdio.h
+
+The stdio.h header defines three variable types, several macros, and various functions for performing input and output.
 
 ```
 #include <stdio.h>
@@ -8,15 +10,5 @@
 int main()
 {
     puts( "Hello World!" );
-}
-```
-## GUI
-
-```
-#include <windows.h>
-
-int main()
-{
-    MessageBoxA( NULL, "Hello World!", "Hello", MB_OK );
 }
 ```
