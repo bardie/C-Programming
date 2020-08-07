@@ -1,4 +1,4 @@
-## Beginning
+# Beginners
 
 ## Command Line
 
