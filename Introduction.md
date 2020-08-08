@@ -1,11 +1,19 @@
+## 1. Document section
+These section contains documentation on the codes functionality. It is not processed by the compiler and will not be displayed as part of the output.
+```
+/* This is a sample documentation of this application.*/
+```
+## 2. Preprocessor Section
+This section includes all standard input-output files before compiling any C program.
 
-## Headers
+### Headers
 A header file is a file with extension .h which contains C function declarations and macro definitions to be shared between several source files. 
 
 There are two types of header files: 
  1. User-defined header files: Files created by a programmer
  2. Standard library header files: Come with the compiler
  
+ Headers have the extension ".h" and are represented in brackets <> as illustrated below:
  ```
  #include <file>
  ```
@@ -17,14 +25,20 @@ There are two types of header files:
  #include"sample.h"
  ```
 
-## Functions
-
-## Variables
-
-## Arguments
+## 3. Definition section
 
 
-## Commandline
+## 4. Global declaration section
+
+## 5. Function declaration section
+
+## 6. Main function
+
+## 7. User-defined function section
+
+# Examples
+
+### Commandline
 Sample main.c from https://opensource.com/article/19/5/how-write-good-c-main-function
 ```
 /* main.c - the complete listing */
