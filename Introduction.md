@@ -1,4 +1,29 @@
 
+## Headers
+A header file is a file with extension .h which contains C function declarations and macro definitions to be shared between several source files. 
+
+There are two types of header files: 
+ 1. User-defined header files: Files created by a programmer
+ 2. Standard library header files: Come with the compiler
+ 
+ ```
+ #include <file>
+ ```
+  ```
+ #include <stdio.h>
+ ```
+ A header can also be written with double quotes which signifies the header file is in the present folder
+ ```
+ #include"sample.h"
+ ```
+
+## Functions
+
+## Variables
+
+## Arguments
+
+
 ## Commandline
 Sample main.c from https://opensource.com/article/19/5/how-write-good-c-main-function
 ```
