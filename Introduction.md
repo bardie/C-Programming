@@ -26,7 +26,7 @@ There are two types of header files:
  ```
 
 ## 3. Definition section
-
+This section uses the #define directive. It allows the definition of macros which allows constant values to be declared for use.
 
 ## 4. Global declaration section
 
