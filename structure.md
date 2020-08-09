@@ -1,3 +1,4 @@
+# C PROGRAMMING CODE STRUCTURE
 ## 1. Document section
 These section contains documentation on the codes functionality. It is not processed by the compiler and will not be displayed as part of the output.
 ```
