@@ -28,6 +28,32 @@ int main()
      celsius = 5 * (fahr-32) / 9;
      printf("%d\t%d\n", fahr, celsius);
      fahr = fahr + step;
-   }
+   } #include <stdio.h>
+ /* print Fahrenheit-Celsius table */
+ main()
+ {
+ int fahr;
+ for (fahr = 0; fahr <= 300; fahr = fahr + 20)
+ printf("%3d %6.1f\n", fahr, (5.0/9.0)*(fahr-32));
+ } 
  } 
 ```
+## For Loop
+### Syntax
+```
+for (initializationStatement; testExpression; updateStatement)
+{
+    // statements inside the body of loop
+}
+```
+### Example
+```
+ #include <stdio.h>
+ /* print Fahrenheit-Celsius table */
+ main()
+ {
+ int fahr;
+ for (fahr = 0; fahr <= 300; fahr = fahr + 20)
+ printf("%3d %6.1f\n", fahr, (5.0/9.0)*(fahr-32));
+ } 
+ ```
