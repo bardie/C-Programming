@@ -1,13 +1,44 @@
 # C PROGRAMMING CODE STRUCTURE
-## 1. Document section
+
+A function definition consists of:
+ 1. Return Type − A return type is a data type of the value returned from a function. It can either return a value or can be empty which is defined by the keyword void.
+ 2. Function Name − The actual name of the function.
+ 3. Parameters − It is an optional value that is passed When a function is invoked.
+ 4. Function Body − The function body contains a collection of statements that define what the function does.
+ 
+Syntax:
+```
+return_type function_name( parameter list ) {
+   body of the function
+}
+```
+
+Example:
+```
+/* function returning the max between two numbers */
+int max(int num1, int num2) {
+
+   /* local variable declaration */
+   int result;
+ 
+   if (num1 > num2)
+      result = num1;
+   else
+      result = num2;
+ 
+   return result; 
+}
+```
+## Sections
+### 1. Document section
 These section contains documentation on the codes functionality. It is not processed by the compiler and will not be displayed as part of the output.
 ```
 /* This is a sample documentation of this application.*/
 ```
-## 2. Preprocessor Section
+### 2. Preprocessor Section
 This section includes all standard input-output files before compiling any C program.
 
-### Headers
+#### Headers
 A header file is a file with extension .h which contains C function declarations and macro definitions to be shared between several source files. 
 
 There are two types of header files: 
@@ -26,7 +57,7 @@ There are two types of header files:
  #include"sample.h"
  ```
 
-## 3. Definition section
+### 3. Definition section
 The definition section allows the definition of macros which declare constant values. Defined variables or functions are allocated memory to store the variable or function.
 
 It uses the #define directive which is made up of:
@@ -41,16 +72,16 @@ OR
  2. Value: The value of the constant.
  3. Expression: Expression whose value is assigned to the constant and enclosed in parentheses if it contains operators.
  
-### Examples
-#### Integer
+#### Examples
+##### Integer
 ```
 #define AGE 12
 ```
-#### String
+##### String
 ```
 #define NAME "Eric"
 ```
-#### Expression
+##### Expression
 ```
 #define AGE (12 / 2)
 ```
@@ -62,10 +93,10 @@ Example
 ```
 #undex AGE
 ```
-## 4. Global declaration section
+### 4. Global declaration section
 Global variables and user defined functions are declared outside any function are called global variables. Declaration of a variable or function simply declares that they exist somewhere in the program, but the memory is not allocated for them. The declaration tells the program their data types, the order of those arguments for functions, and the return type of the function.
 
-### Extern
+#### Extern
 
 Example 1:
 ```
@@ -80,14 +111,14 @@ Example 2:
 ```
 extern int var;
 ```
-### Typedef
+#### Typedef
 Typedef allows us to create an alias or new name for an existing type or user defined type.
 
 Syntax
 ```
 typedef data_type new_name;
 ```
-#### Example
+##### Example
 ```
 typedef int myint;
 ```
@@ -95,7 +126,7 @@ typedef int myint;
 typedef int myint, integer;
 ```
 
-## 5. Function declaration section
+### 5. Function declaration section
 A function declaration tells the compiler about a function's name, return type, and parameters. 
 ```
 int max(int num1, int num2);
@@ -104,25 +135,15 @@ Parameter names are not important in function declaration only their type is req
 ```
 int max(int, int);
 ```
-Example:
-```
-return_type function_name( parameter list ) {
-   body of the function
-}
-```
 
-## 6. Main function
-A function definition consists of:
- 1. Return Type − A return type is a data type of the value returned from a function. It can either return a value or can be empty which is defined by the keyword void.
- 2. Function Name − The actual name of the function.
- 3. Parameters − It is an optional value that is passed When a function is invoked.
- 4. Function Body − The function body contains a collection of statements that define what the function does.
+### 6. Main function
 
-## 7. User-defined function section
+
+### 7. User-defined function section
 
 # Examples
 
-### Commandline
+## Commandline
 Sample main.c from https://opensource.com/article/19/5/how-write-good-c-main-function
 ```
 /* main.c - the complete listing */
