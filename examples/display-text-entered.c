@@ -1,5 +1,5 @@
  #include <stdio.h>
- /* Gets the ASCII number for input inserted and validates that it is not equal to EOF (-1) then shows the character inserted*/
+ /* Gets the Decimal number based on the ASCII table for input inserted and validates that it is not equal to EOF (-1) then shows the character inserted*/
  main()
  {
  int c;
