@@ -96,6 +96,13 @@ Example
 ### 4. Global declaration section
 Global variables and user defined functions are declared outside any function are called global variables. Declaration of a variable or function simply declares that they exist somewhere in the program, but the memory is not allocated for them. The declaration tells the program their data types, the order of those arguments for functions, and the return type of the function.
 
+Global variables are a bad idea and should never be used. But if they are required, declare them on this section and assign them a default value.
+
+Example:
+```
+int dumb_global_variable = -11;
+```
+
 #### Extern
 
 Example 1:
@@ -125,7 +132,6 @@ typedef int myint;
 ```
 typedef int myint, integer;
 ```
-
 ### 5. Function declaration section
 A function declaration tells the compiler about a function's name, return type, and parameters. 
 ```
@@ -137,11 +143,12 @@ int max(int, int);
 ```
 
 ### 6. Main function
-
+The main() function is used to collect the arguments that the user provides, perform minimal input validation, and then pass the collected arguments to functions that will use them. 
 
 ### 7. User-defined function section
+This is a block of code that is defined by a user to achieve a required function.
 
-# Examples
+# Example of Good C main Function
 
 ## Commandline
 Sample main.c from https://opensource.com/article/19/5/how-write-good-c-main-function
