@@ -39,6 +39,19 @@ int main()
  } 
 ```
 ## For Loop
+A for loop statement consists of:
+ 1. Initialization Statement: Variable to start with
+ 2. Test Expressions can have multiple conditions using either ',' or '&&'.
+ Example: This will discard the previous condition and retain only 'j < q'
+ ```
+ i < p, j < q
+ ```
+ Example 2: This will combine the conditions
+ ```
+ i < p && j < q
+ ```
+ 3. Update Statement: Value to be added
+ 
 ### Syntax
 ```
 for (initializationStatement; testExpression; updateStatement)
@@ -46,7 +59,7 @@ for (initializationStatement; testExpression; updateStatement)
     // statements inside the body of loop
 }
 ```
-### Example
+### Example 1
 ```
  #include <stdio.h>
  /* print Fahrenheit-Celsius table */
@@ -57,3 +70,14 @@ for (initializationStatement; testExpression; updateStatement)
  printf("%3d %6.1f\n", fahr, (5.0/9.0)*(fahr-32));
  } 
  ```
+ ### Example 2
+ ```
+  #include <stdio.h>
+ /* print Fahrenheit-Celsius table */
+int main()
+ {
+ int fahr;
+ for (fahr = 300; fahr >= 0 && fahr <= 300; fahr = fahr - 20)
+ printf("%3d %6.1f\n", fahr, (5.0/9.0)*(fahr-32));
+ }
+```
