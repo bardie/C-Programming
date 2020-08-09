@@ -41,17 +41,27 @@ int main()
 ## For Loop
 A for loop statement consists of:
  1. Initialization Statement: Variable to start with
+ Example:
+ ```
+ for(i = 0, j = 0;
+ ```
  2. Test Expressions can have multiple conditions using either ',' or '&&'.
  Example: This will discard the previous condition and retain only 'j < q'
  ```
- i < p, j < q
+ (i < p), (j < q)
  ```
  Example 2: This will combine the conditions
  ```
- i < p && j < q
+ (i < p) && (j < q)
  ```
  3. Update Statement: Value to be added
- 
+ ```
+ i++, j++)
+ ```
+ Full Example:
+ ```
+ for(i = 0, j = 0; i < p && j < q; i++, j++){
+ ```
 ### Syntax
 ```
 for (initializationStatement; testExpression; updateStatement)
