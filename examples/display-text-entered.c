@@ -1,5 +1,5 @@
  #include <stdio.h>
- /* copy input to output; 1st version */
+ /* Gets the ASCII number for input inserted and validates that it is not equal to EOF (-1) then shows the character inserted*/
  main()
  {
  int c;
