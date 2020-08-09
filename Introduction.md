@@ -47,7 +47,7 @@ OR
 ```
 #### String
 ```
-#define NAME "What is your age?"
+#define NAME "Eric"
 ```
 #### Expression
 ```
@@ -95,8 +95,27 @@ typedef int myint, integer;
 ```
 
 ## 5. Function declaration section
+A function declaration tells the compiler about a function's name, return type, and parameters. 
+```
+int max(int num1, int num2);
+```
+Parameter names are not important in function declaration only their type is required, so the following is also a valid declaration −
+```
+int max(int, int);
+```
+Example:
+```
+return_type function_name( parameter list ) {
+   body of the function
+}
+```
 
 ## 6. Main function
+A function definition consists of:
+ 1. Return Type − A return type is a data type of the value returned from a function. It can either return a value or can be empty which is defined by the keyword void.
+ 2. Function Name − The actual name of the function.
+ 3. Parameters − It is an optional value that is passed When a function is invoked.
+ 4. Function Body − The function body contains a collection of statements that define what the function does.
 
 ## 7. User-defined function section
 
