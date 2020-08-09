@@ -26,9 +26,73 @@ There are two types of header files:
  ```
 
 ## 3. Definition section
-This section uses the #define directive. It allows the definition of macros which allows constant values to be declared for use.
+The definition section allows the definition of macros which declare constant values. Defined variables or functions are allocated memory to store the variable or function.
 
+It uses the #define directive which is made up of:
+```
+#define CNAME value
+```
+OR
+```
+#define CNAME (expression)
+```
+ 1. CNAME: The name of the constant.
+ 2. Value: The value of the constant.
+ 3. Expression: Expression whose value is assigned to the constant and enclosed in parentheses if it contains operators.
+ 
+### Examples
+#### Integer
+```
+#define AGE 12
+```
+#### String
+```
+#define NAME "What is your age?"
+```
+#### Expression
+```
+#define AGE (12 / 2)
+```
+Defined expressions can also be undefined using the #undef directive which tells the preprocessor to remove all definitions for the specified macro. Once a macro is undefined, an #ifdef (if definition exists) directive on that macro will evaluate to false.
+```
+#undef macro_definition
+```
+Example
+```
+#undex AGE
+```
 ## 4. Global declaration section
+Global variables and user defined functions are declared outside any function are called global variables. Declaration of a variable or function simply declares that they exist somewhere in the program, but the memory is not allocated for them. The declaration tells the program their data types, the order of those arguments for functions, and the return type of the function.
+
+### Extern
+
+Example 1:
+```
+int foo(int arg1, char arg2);
+```
+Is compiled as
+```
+extern int foo(int arg1, char arg2);
+```
+
+Example 2:
+```
+extern int var;
+```
+### Typedef
+Typedef allows us to create an alias or new name for an existing type or user defined type.
+
+Syntax
+```
+typedef data_type new_name;
+```
+#### Example
+```
+typedef int myint;
+```
+```
+typedef int myint, integer;
+```
 
 ## 5. Function declaration section
 
