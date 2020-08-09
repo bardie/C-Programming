@@ -1,34 +1,4 @@
 # C PROGRAMMING CODE STRUCTURE
-
-A function definition consists of:
- 1. Return Type − A return type is a data type of the value returned from a function. It can either return a value or can be empty which is defined by the keyword void.
- 2. Function Name − The actual name of the function.
- 3. Parameters − It is an optional value that is passed When a function is invoked.
- 4. Function Body − The function body contains a collection of statements that define what the function does.
- 
-Syntax:
-```
-return_type function_name( parameter list ) {
-   body of the function
-}
-```
-
-Example:
-```
-/* function returning the max between two numbers */
-int max(int num1, int num2) {
-
-   /* local variable declaration */
-   int result;
- 
-   if (num1 > num2)
-      result = num1;
-   else
-      result = num2;
- 
-   return result; 
-}
-```
 ## Sections
 ### 1. Document section
 These section contains documentation on the codes functionality. It is not processed by the compiler and will not be displayed as part of the output.
@@ -133,6 +103,36 @@ typedef int myint;
 typedef int myint, integer;
 ```
 ### 5. Function declaration section
+A function is a block of statements that performs a specific task. A function can be declared and defined.
+
+A function definition consists of:
+ 1. Return Type − A return type is a data type of the value returned from a function. It can either return a value or can be empty which is defined by the keyword void.
+ 2. Function Name − The actual name of the function.
+ 3. Parameters − It is an optional value that is passed When a function is invoked.
+ 4. Function Body − The function body contains a collection of statements that define what the function does.
+
+```
+return_type function_name( parameter list ) {
+   body of the function
+}
+```
+
+Example:
+```
+/* function returning the max between two numbers */
+int max(int num1, int num2) {
+
+   /* local variable declaration */
+   int result;
+ 
+   if (num1 > num2)
+      result = num1;
+   else
+      result = num2;
+ 
+   return result; 
+}
+```
 A function declaration tells the compiler about a function's name, return type, and parameters. 
 ```
 int max(int num1, int num2);
